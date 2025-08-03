@@ -21,23 +21,25 @@ It supports multi-file input, automatic column type detection, currency/date par
 🗂 Folder Structure
 --------------------------------------------------------------------------------
 
-financial-data-parser:
-  - main.py  # Main entry point
-  - data/  # Folder for raw Excel input files
-  - cleaned_data/  # Stores cleaned Excel/SQLite DB output
-  - src/
-      core/:
-        - main_design.py  # Menu loop & orchestrates all phases
-        - phase_1.py  # Load and preview Excel files
-        - phase_2.py  # Detect column types
-        - phase_3.py  # Format amount and date columns
-        - phase_4.py  # Store in SQLite and run queries
-        - excel_processor.py  # ExcelProcessor class
-        - type_detector.py  # Type detection logic
-        - format_parser.py  # Cleans and converts financial/date data
-        - data_storage.py  # SQLite DB wrapper for querying/aggregations
-        - utils.py  # Common helpers (like file name fetcher)
-        - __init__.py
+financial-data-parser/
+│
+├── main.py                    # Main entry point
+├── data/                      # Folder for raw Excel input files
+├── cleaned_data/              # Stores cleaned Excel/SQLite DB output
+│
+└── src/
+    └── core/
+        ├── main_design.py     # Menu loop & orchestrates all phases
+        ├── phase_1.py         # Load and preview Excel files
+        ├── phase_2.py         # Detect column types
+        ├── phase_3.py         # Format amount and date columns
+        ├── phase_4.py         # Store in SQLite and run queries
+        ├── excel_processor.py # ExcelProcessor class
+        ├── type_detector.py   # Type detection logic
+        ├── format_parser.py   # Cleans and converts financial/date data
+        ├── data_storage.py    # SQLite DB wrapper for querying/aggregations
+        ├── utils.py           # Common helpers (like file name fetcher)
+        └── __init__.py
 
 
 
