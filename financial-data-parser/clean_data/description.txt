@@ -1,4 +1,0 @@
-this folder save a file from data storage output , output will be a clean , formatted data,after applying all these operation
-like (type detetion, format prasing, storage )
-
-also contain a db, which data base file
